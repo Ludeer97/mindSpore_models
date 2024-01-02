@@ -70,3 +70,6 @@ For more information about `MindSpore` framework, please refer to [FAQ](https://
 - **Q: What should I do if I can't reach the accuracy while training with several servers instead of a single server?**
 
   **A**: Most of the models has only been trained on single server with at most 8 pcs. Because the `batch_size` used in MindSpore only represent the batch size of single GPU/NPU, the `global_batch_size` will increase while training with multi-server. Different `gloabl_batch_size` requires different hyper parameter including learning_rate, etc. So you have to optimize these hyperparameters will training with multi-servers.
+
+  # Revision 
+  Zikui Lu revised the project in 2024/01/02
